@@ -11,7 +11,8 @@ provider "google" {
 }
 
 resource "google_dataplex_lake" "basic_lake" { 
-  name     = "wf-us-prod-dpx-fghi-app01" 
+  #name     = "wf-us-prod-dpx-fghi-app01" 
+  name     = "wf-us-prod-dpx-fghi" 
   location = "us-west1" 
   project  = var.provider_project 
   labels   = var.labels
