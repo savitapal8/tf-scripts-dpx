@@ -48,11 +48,13 @@ resource "google_storage_bucket" "basic_bucket" {
   name          = "wf-us-prod-gcs-fghi-app01"
   location      = "us-west1"
   uniform_bucket_level_access = true
-  lifecycle {
-    ignore_changes = [
-      var.labels
-    ]
-  }
+  #lifecycle {
+  #  ignore_changes = [
+  #    var.labels
+  #  ]
+  #}
+  
+  labels         = var.labels
 
   project = var.provider_project
 }
