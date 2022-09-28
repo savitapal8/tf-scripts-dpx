@@ -10,5 +10,5 @@ variable "access_token"{
     sensitive   = true
 }
 variable "labels"{
-    type = map
+    type = map(object)
 }
