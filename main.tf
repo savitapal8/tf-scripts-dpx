@@ -50,7 +50,7 @@ resource "google_storage_bucket" "basic_bucket" {
   uniform_bucket_level_access = true
   lifecycle {
     ignore_changes = [
-      labels = var.labels
+      labels = var.labels,
     ]
   }
 
