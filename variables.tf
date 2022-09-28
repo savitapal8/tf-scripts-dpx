@@ -9,3 +9,6 @@ variable "access_token"{
     type = string
     sensitive   = true
 }
+variable "labels"{
+    type = map
+}
